@@ -1,0 +1,154 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #888;
+}
+
+.header {
+    padding: 30px 0;
+    background-color: crimson;
+    border-bottom:  30px solid #333;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-btn {
+    border: none;
+    font-size: 30px;
+    width: 230px;
+    height: 50px;
+
+    transition: all 0.3s;
+}
+.header-btn:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.title {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(3, 3, 3, 0.7);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal--active {
+    visibility: hidden;
+}
+.modal-window {
+    position: relative;
+    border-radius: 10px;
+    width: 600px;
+    background-color: bisque;
+    border: 4px solid black;
+    padding: 40px;
+}
+.modal-container {
+    display: flex;
+    flex-direction: column;
+}
+.modal-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.modal-btn:hover {
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.modal-input {
+    font-size: 27px;
+    height: 70px;
+    margin: 40px 0;
+    width: 400px;
+}
+
+.books {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: #888;
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.book {
+    width: 386px;
+    height: 500px;
+    background-color: crimson;
+    border: 2px black solid;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.description {
+    font-size: 40px;
+    text-align: center;
+}
+.book>button {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 32s;
+    transition: color 0.3s;
+}
+.book>button:hover {
+    color: black;
+    background-color: crimson;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#submit {
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}

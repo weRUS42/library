@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <h1 class="title" id="title">Library</h1>
+        <button value="book" type="button" class="header-btn" id="header-btn">Add New Book</button>
+    </header>
+
+    <main class="books" id="books">
+
+        <!-- <div class="book">
+            <p class="description">Book Name: <span></span></p>
+            <p class="description">Book Author: <span></span></p>
+            <p class="description">Book pages: <span></span></p>
+            <button type="button" value="delete">Delete</button>
+        </div> -->
+
+    </main>
+
+    <div class="modal modal--active">
+        <div class="modal-window">
+            <div class="modal-container">
+                <form action="#" id="form">
+                    <input required type="text" id="book-name" class="modal-input" placeholder="Type your book name">
+                    <input required type="text" id="book-author" class="modal-input" placeholder="Type your book author">
+                    <input required type="number" id="book-pages" class="modal-input" placeholder="Type count of your book pages ">
+                    <input type="submit" value="submit" id="submit">
+                </form>
+            </div>
+            <button type="button" value="exit" class="modal-btn">X</button>
+        </div>
+    </div>
+</body>
+</html>
